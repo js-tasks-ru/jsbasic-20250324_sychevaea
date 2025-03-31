@@ -8,4 +8,5 @@ function factorial(n) {
     result *= (n -delta);
     delta++;
   }
+  return result;
 }
