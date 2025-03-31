@@ -10,7 +10,11 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  let invalid_symb = ' ';
+  if(!name) return false;
+  if (name.includes(invalid_symb)) return false;
+  if (name.length < 4) return false;
+  return true;
 }
 
 function sayHello() {
