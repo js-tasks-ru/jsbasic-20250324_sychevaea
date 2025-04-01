@@ -18,7 +18,11 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
+  const invalid_symb = ' ';
+  if (!name) return false;
+  if (name.includes(invalid_symb)) return false;
+  if (name.length < 4) return false;
+  return true;
 }
 
 /**
