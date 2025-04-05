@@ -1,5 +1,5 @@
 function camelize(str) {
-  if (!str) return false;
+  if (!str) return '';
 
   let arr = str.split('-');
 
