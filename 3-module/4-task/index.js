@@ -1,10 +1,5 @@
 function showSalary(users, age) {
-  let arr = [];
-
-  for (let user of users){
-    if (user.age <= age){
-      arr.push(`${user.name}, ${user.balance}`);
-    }
-  }
-  return arr.join('\n');
+  return users.filter((user, index, array) => user.age <= age)
+  .map((user, index, array) => `${user.name}, ${user.balance}`)
+  .join('\n');
 }
