@@ -8,29 +8,29 @@ function highlight(table) {
 
       // устанавливаем класс available/unavailable взависимости от значения атрибута data-available у ячейки Status
       if (header.textContent == 'Status' && cell.dataset.available == 'true'){
-        cell.classList.add('available');
+        row.classList.add('available');
       }
 
       if (header.textContent == 'Status' && cell.dataset.available == 'false'){
-        cell.classList.add('unavailable');
+        row.classList.add('unavailable');
       }
 
       if (header.textContent == 'Status' && typeof cell.dataset.available == 'undefined'){
-        cell.classList.add('hidden');
+        row.classList.add('hidden');
       }
 
       // Проставить класс male/female в зависимости от содержимого ячейки Gender
       if (header.textContent == 'Gender' && cell.textContent == 'm'){
-        cell.classList.add('male');
+        row.classList.add('male');
       }
 
       if (header.textContent == 'Gender' && cell.textContent == 'f'){
-        cell.classList.add('female');
+        row.classList.add('female');
       }
 
       // если значение ячейки Age меньше 18
       if (header.textContent == 'Age' && cell.textContent && parseInt(cell.textContent) < 18){
-        cell.style.textDecoration = 'line-through';
+        row.style.textDecoration = 'line-through';
       }
     }
   });
