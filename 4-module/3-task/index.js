@@ -6,8 +6,6 @@ function highlight(table) {
     for(let row of body.rows){
       let cell = row.cells[index];
 
-      console.log(index);
-
       // устанавливаем класс available/unavailable взависимости от значения атрибута data-available у ячейки Status
       if (header.textContent == 'Status' && cell.dataset.available == 'true'){
         cell.classList.add('available');
