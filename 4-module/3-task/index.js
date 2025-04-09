@@ -15,8 +15,8 @@ function highlight(table) {
         row.classList.add('unavailable');
       }
 
-      if (cell.hasAttribute('data-available') == false){
-        row.classList.add('hidden');
+      if (header.textContent == 'Status' && cell.hasAttribute('data-available') == false){
+        row.classList.setAttribute('hidden');
       }
 
       // Проставить класс male/female в зависимости от содержимого ячейки Gender
