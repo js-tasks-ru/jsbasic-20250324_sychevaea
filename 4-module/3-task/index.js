@@ -15,7 +15,7 @@ function highlight(table) {
         row.classList.add('unavailable');
       }
 
-      if (header.textContent == 'Status' && cell.dataset.available === undefined){
+      if (header.textContent == 'Status' && cell.hasAttribute('data-available')){
         row.classList.add('hidden');
       }
 
