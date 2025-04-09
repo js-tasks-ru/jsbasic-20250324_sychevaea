@@ -16,7 +16,7 @@ function highlight(table) {
       }
 
       if (header.textContent == 'Status' && cell.hasAttribute('data-available') == false){
-        row.classList.setAttribute('hidden');
+        row.setAttribute('hidden', '');
       }
 
       // Проставить класс male/female в зависимости от содержимого ячейки Gender
