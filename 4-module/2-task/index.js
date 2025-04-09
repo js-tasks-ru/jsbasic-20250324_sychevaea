@@ -6,4 +6,5 @@ function makeDiagonalRed(table) {
       arr[index].style.backgroundColor = 'red';
     })
   });
+  return tbl;
 }
